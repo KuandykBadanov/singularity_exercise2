@@ -1,3 +1,11 @@
-multiply([1, 2, 3])(2) ➞ [2, 4, 6]
-multiply([4, 6, 5])(10) ➞ [40, 60, 50]
-multiply([1, 2, 3])(0) ➞ [0, 0, 0]
+function multiply(arr) {
+    return function(v) {
+       let newArray = [];
+       for (let i=0; i<arr.length; i++) {
+           newArray.push(arr[i] * v);
+       }
+       return newArray;
+    }
+ }
+
+ multiply([4, 6, 5])(10)
