@@ -20,3 +20,5 @@ function split(str) {
       let newStr = newVowels + consonants;
         return newStr;
 }
+
+//console.log(split("HappyNewYear!!!")); //"ayeeaHppNwYr!!!"
