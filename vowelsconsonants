@@ -1,0 +1,22 @@
+function split(str) {
+  let vowels = "aeiouy";
+  let newVowels = "";
+  let consonants = "";
+  let flag = false;
+    for (let i=0; i<str.length; i++) {
+      for (j=0; j<vowels.length; j++) {
+        if (str[i] === vowels[j]) {
+          newVowels += str[i];
+          flag = true;
+          break;
+        } else {
+            flag = false;
+        }
+      }
+      if (flag === false) {
+        consonants += str[i];  
+      }
+    }
+      let newStr = newVowels + consonants;
+        return newStr;
+}
